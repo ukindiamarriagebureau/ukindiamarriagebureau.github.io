@@ -9,11 +9,142 @@
 <meta name="description" content="Professional UK-based matrimonial service connecting Indian brides and grooms. Find genuine matrimonial profiles and connect directly on WhatsApp.">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+*/* SUNNY PROFILE */
+
+.sunny-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
 }
+
+.sunny-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sunny-title span {
+  color: #9b526b;
+  font-weight: bold;
+}
+
+.sunny-title h2 {
+  margin: 10px 0;
+  font-size: 32px;
+  color: #6f2942;
+}
+
+.sunny-title p {
+  color: #777;
+}
+
+.sunny-card {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background: rgba(255,255,255,0.96);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.sunny-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 55px rgba(0,0,0,0.20);
+}
+
+.sunny-photo {
+  min-height: 430px;
+  cursor: pointer;
+}
+
+.sunny-photo img {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+  display: block;
+}
+
+.sunny-info {
+  padding: 35px;
+  color: #333;
+}
+
+.sunny-info h3 {
+  font-size: 38px;
+  color: #7d2944;
+  margin: 0 0 8px;
+}
+
+.sunny-location {
+  color: #777;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sunny-info p {
+  line-height: 1.9;
+  color: #555;
+}
+
+.sunny-details {
+  margin: 25px 0;
+}
+
+.sunny-details div {
+  background: #fff6f8;
+  padding: 13px;
+  margin: 10px 0;
+  border-right: 4px solid #9b526b;
+  border-radius: 8px;
+}
+
+.sunny-details strong {
+  color: #7d2944;
+  margin-left: 8px;
+}
+
+.sunny-details span {
+  color: #555;
+}
+
+.sunny-whatsapp {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.sunny-whatsapp:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+
+  .sunny-card {
+    grid-template-columns: 1fr;
+  }
+
+  .sunny-photo,
+  .sunny-photo img {
+    min-height: 380px;
+    height: 380px;
+  }
+
+  .sunny-info {
+    padding: 25px 20px;
+  }
+
+  .sunny-title h2 {
+    font-size: 26px;
+  }
+
 
 html{
     scroll-behavior:smooth;
