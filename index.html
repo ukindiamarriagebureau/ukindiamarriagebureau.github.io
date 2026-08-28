@@ -9,102 +9,102 @@
 <meta name="description" content="Professional UK-based matrimonial service connecting Indian brides and grooms. Find genuine matrimonial profiles and connect directly on WhatsApp.">
 
 <style>
-*/* SUNNY PROFILE */
-
-.sunny-section {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 20px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.sunny-title {
-  text-align: center;
-  margin-bottom: 30px;
+html{
+    scroll-behavior:smooth;
 }
 
-.sunny-title span {
-  color: #9b526b;
-  font-weight: bold;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffaf7;
+    color:#292323;
+    line-height:1.6;
 }
 
-.sunny-title h2 {
-  margin: 10px 0;
-  font-size: 32px;
-  color: #6f2942;
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,250,247,.96);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #eadbd4;
 }
 
-.sunny-title p {
-  color: #777;
+.navbar{
+    max-width:1150px;
+    margin:auto;
+    padding:16px 22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.sunny-card {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  background: rgba(255,255,255,0.96);
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 0 15px 45px rgba(0,0,0,0.15);
-  transition: 0.3s;
+.logo{
+    font-size:21px;
+    font-weight:bold;
+    color:#7b1830;
 }
 
-.sunny-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 55px rgba(0,0,0,0.20);
+.logo span{
+    display:block;
+    font-size:11px;
+    color:#806b63;
+    letter-spacing:1.5px;
+    font-weight:normal;
 }
 
-.sunny-photo {
-  min-height: 430px;
-  cursor: pointer;
+.nav-links{
+    display:flex;
+    gap:22px;
+    align-items:center;
 }
 
-.sunny-photo img {
-  width: 100%;
-  height: 100%;
-  min-height: 430px;
-  object-fit: cover;
-  display: block;
+.nav-links a{
+    text-decoration:none;
+    color:#403735;
+    font-size:14px;
+    font-weight:600;
 }
 
-.sunny-info {
-  padding: 35px;
-  color: #333;
+.nav-whatsapp{
+    background:#218c55;
+    color:white !important;
+    padding:9px 15px;
+    border-radius:30px;
 }
 
-.sunny-info h3 {
-  font-size: 38px;
-  color: #7d2944;
-  margin: 0 0 8px;
+/* HERO */
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 20px;
+    
+    background:
+        linear-gradient(
+            rgba(255,250,247,.82),
+            rgba(255,245,238,.88)
+        ),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-.sunny-location {
-  color: #777;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.sunny-info p {
-  line-height: 1.9;
-  color: #555;
-}
-
-.sunny-details {
-  margin: 25px 0;
-}
-
-.sunny-details div {
-  background: #fff6f8;
-  padding: 13px;
-  margin: 10px 0;
-  border-right: 4px solid #9b526b;
-  border-radius: 8px;
-}
-
-.sunny-details strong {
-  color: #7d2944;
-  margin-left: 8px;
-}
-
-.sunny-details span {
+.badge{
+    display:inline-block;
+    padding:8px 17px;
+    border-radius:30px;
+    background:#f4e2df;
   color: #555;
 }
 
