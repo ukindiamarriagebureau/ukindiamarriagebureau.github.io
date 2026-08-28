@@ -359,6 +359,124 @@ section{
 .profiles{
     background:#f8eee9;
 }
+    <!-- Sunny Profile Section -->
+<section class="profile-section">
+  <div class="profile-card">
+
+    <a href="https://wa.me/923234868159?text=Hi%2C%20I%27m%20interested%20in%20Sunny%27s%20profile." 
+       target="_blank">
+      <img src="sunny.jpg" alt="Sunny Profile" class="profile-photo">
+    </a>
+
+    <div class="profile-info">
+      <span class="profile-tag">Groom Profile</span>
+
+      <h2>Sunny</h2>
+
+      <p class="location">📍 Canada</p>
+
+      <p>
+        <strong>Business:</strong> Automobile Showroom
+      </p>
+
+      <p>
+        <strong>Education:</strong> IIT Specialist
+      </p>
+
+      <p class="profile-text">
+        Well-settled professional based in Canada, associated with
+        the automobile business and looking for a suitable life partner
+        through a trusted matrimonial service.
+      </p>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/923234868159?text=Hi%2C%20I%27m%20interested%20in%20Sunny%27s%20profile."
+         target="_blank">
+        💬 Chat on WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.profile-section {
+  padding: 60px 20px;
+  background: #faf7f2;
+}
+
+.profile-card {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  border-radius: 24px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.10);
+}
+
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-photo:hover {
+  transform: scale(1.03);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-tag {
+  color: #a67c52;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.profile-info h2 {
+  font-size: 34px;
+  margin: 8px 0;
+}
+
+.location {
+  font-size: 18px;
+}
+
+.profile-text {
+  line-height: 1.7;
+  color: #555;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 22px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 230px;
+    height: 230px;
+  }
+}
+</style>
 
 .profile-grid{
     display:grid;
