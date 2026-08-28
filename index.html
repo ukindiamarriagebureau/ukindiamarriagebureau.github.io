@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UK India Marriage Bureau</title>
+<meta name="description" content="UK India Marriage Bureau — simple UK–India matrimonial matchmaking.">
+<style>
+:root{--navy:#14213d;--gold:#c8a45d;--rose:#a65370;--cream:#fbf8f2;--ink:#20232a;--muted:#687080;--white:#fff;--line:#e7e1d7}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+header{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 3px 18px #0003}
+.logo{font-size:19px;font-weight:800}.logo b{color:#e5c47c}nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+.lang{margin-left:18px;border:1px solid #ffffff55;background:#ffffff10;color:#fff;padding:7px 9px;border-radius:7px}
+.hero{padding:88px 5%;background:linear-gradient(125deg,#14213d,#263b66);color:#fff}.wrap{max-width:1120px;margin:auto}.kicker{color:#e5c47c;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.03;max-width:850px;margin:12px 0}.hero p{font-size:18px;color:#e8ebf1;max-width:690px}
+.btn{display:inline-block;border:0;border-radius:9px;background:var(--gold);color:#fff;padding:13px 20px;font-weight:800;text-decoration:none;cursor:pointer;margin:7px 7px 0 0}.btn.light{background:#fff;color:var(--navy)}.btn.rose{background:var(--rose)}
+section{padding:65px 5%}h2{text-align:center;font-size:34px;margin:0 0 10px}.sub{text-align:center;color:var(--muted);max-width:730px;margin:0 auto 35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:22px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 7px 25px #00000009}
+.profile{padding:0;overflow:hidden}.profile img{width:100%;height:260px;object-fit:cover}.profile .inside{padding:20px}.pill{display:inline-block;border-radius:50px;background:#edf7ee;color:#2f6f39;padding:4px 9px;font-size:12px;font-weight:800}.meta{color:var(--muted);font-size:14px}
+.notice{background:#fff7e5;border-left:4px solid var(--gold);padding:14px 16px;border-radius:6px;margin-top:24px}
+form{max-width:780px;margin:auto;background:#fff;padding:28px;border-radius:16px;border:1px solid var(--line);box-shadow:0 7px 25px #00000009}label{display:block;font-weight:800;margin:13px 0 6px}input,select,textarea{width:100%;padding:12px;border:1px solid #d7dbe2;border-radius:8px;font:inherit}textarea{min-height:100px}.check{display:flex;gap:8px;align-items:flex-start;font-weight:400}.check input{width:auto;margin-top:5px}
+footer{background:#0e172c;color:#dce2ee;padding:35px 5%;text-align:center}.small{font-size:13px;color:#aeb8ca}
+#toast{display:none;position:fixed;right:20px;bottom:20px;background:#14213d;color:#fff;padding:15px 18px;border-radius:10px;z-index:50;max-width:340px}
+.modal{display:none;position:fixed;inset:0;background:#0009;z-index:40;align-items:center;justify-content:center;padding:20px}.modalbox{background:#fff;max-width:560px;width:100%;border-radius:16px;padding:26px}.close{float:right;border:0;background:none;font-size:24px;cursor:pointer}
+@media(max-width:760px){nav a{display:none}.lang{margin-left:8px}.hero{padding:62px 5%}section{padding:48px 5%}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">UK <b>India</b> Marriage Bureau</div>
+<nav><a href="#about" data-en="About" data-hi="हमारे बारे में">About</a><a href="#grooms" data-en="Grooms" data-hi="लड़के">Grooms</a><a href="#register" data-en="Register" data-hi="रजिस्ट्रेशन">Register</a><a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a></nav>
+<button class="lang" id="langBtn">हिंदी</button>
+</header>
+
+<section class="hero"><div class="wrap">
+<div class="kicker" data-en="UK–India Matrimonial Matchmaking" data-hi="UK–India वैवाहिक रिश्ते">UK–India Matrimonial Matchmaking</div>
+<h1 data-en="Meaningful matches. Trusted introductions." data-hi="सही रिश्ता। भरोसेमंद पहचान।">Meaningful matches. Trusted introductions.</h1>
+<p data-en="A simple online service connecting Indian brides with UK-based Indian and Indian-origin grooms." data-hi="भारत की लड़कियों को UK में रहने वाले Indian / Indian-origin लड़कों से जोड़ने की आसान ऑनलाइन सेवा।">A simple online service connecting Indian brides with UK-based Indian and Indian-origin grooms.</p>
+<a class="btn" href="#register" data-en="Register as a Bride" data-hi="लड़की का रजिस्ट्रेशन">Register as a Bride</a>
+<a class="btn light" href="#grooms" data-en="View Groom Profiles" data-hi="लड़कों की प्रोफाइल देखें">View Groom Profiles</a>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2 data-en="Simple. Private. Family Friendly." data-hi="आसान। निजी। परिवार के लिए सुविधाजनक।">Simple. Private. Family Friendly.</h2>
+<p class="sub" data-en="We keep the process easy to understand and designed around consent and privacy." data-hi="हम प्रक्रिया को आसान रखते हैं और consent तथा privacy को प्राथमिकता देते हैं।">We keep the process easy to understand and designed around consent and privacy.</p>
+<div class="grid">
+<div class="card"><h3 data-en="1. Register" data-hi="1. रजिस्टर करें">1. Register</h3><p data-en="Submit a short profile and your preferred UK groom criteria." data-hi="अपनी छोटी प्रोफाइल और पसंद के UK groom की जानकारी दें।">Submit a short profile and your preferred UK groom criteria.</p></div>
+<div class="card"><h3 data-en="2. Show Interest" data-hi="2. रुचि बताएं">2. Show Interest</h3><p data-en="Click Interested on a suitable profile. Your phone number is not displayed publicly." data-hi="पसंद की प्रोफाइल पर Interested दबाएं। आपका फोन नंबर खुले में नहीं दिखेगा।">Click Interested on a suitable profile. Your phone number is not displayed publicly.</p></div>
+<div class="card"><h3 data-en="3. Safe Introduction" data-hi="3. सुरक्षित संपर्क">3. Safe Introduction</h3><p data-en="After consent and a short review, an approved contact option can be provided." data-hi="Consent और छोटी review के बाद approved contact option दिया जा सकता है।">After consent and a short review, an approved contact option can be provided.</p></div>
+</div></div></section>
+
+<section id="grooms"><div class="wrap">
+<h2 data-en="Featured UK Grooms" data-hi="UK के चुनिंदा लड़के">Featured UK Grooms</h2>
+<p class="sub" data-en="Demo profiles below. Real profiles should be published only with the groom's permission." data-hi="नीचे demo profiles हैं। असली प्रोफाइल केवल लड़के की अनुमति से प्रकाशित करें।">Demo profiles below. Real profiles should be published only with the groom's permission.</p>
+<div class="grid">
+<article class="card profile"><img src="https://placehold.co/800x600?text=Profile+Photo" alt="Profile placeholder"><div class="inside"><span class="pill">Consent Checked • Demo</span><h3>UK Groom 001</h3><p class="meta">30 · London · Professional</p><p data-en="Education, profession and family introduction." data-hi="शिक्षा, profession और परिवार का संक्षिप्त परिचय।">Education, profession and family introduction.</p><button class="btn" onclick="openInterest('UK Groom 001')">Interested / रुचि है</button></div></article>
+<article class="card profile"><img src="https://placehold.co/800x600?text=Profile+Photo" alt="Profile placeholder"><div class="inside"><span class="pill">Consent Checked • Demo</span><h3>UK Groom 002</h3><p class="meta">32 · Birmingham · Business</p><p data-en="Education, profession and family introduction." data-hi="शिक्षा, profession और परिवार का संक्षिप्त परिचय।">Education, profession and family introduction.</p><button class="btn" onclick="openInterest('UK Groom 002')">Interested / रुचि है</button></div></article>
+<article class="card profile"><img src="https://placehold.co/800x600?text=Profile+Photo" alt="Profile placeholder"><div class="inside"><span class="pill">Consent Checked • Demo</span><h3>UK Groom 003</h3><p class="meta">29 · Manchester · Professional</p><p data-en="Education, profession and family introduction." data-hi="शिक्षा, profession और परिवार का संक्षिप्त परिचय।">Education, profession and family introduction.</p><button class="btn" onclick="openInterest('UK Groom 003')">Interested / रुचि है</button></div></article>
+</div>
+<div class="notice"><strong data-en="Privacy-first:" data-hi="Privacy सबसे पहले:">Privacy-first:</strong> <span data-en="No groom phone number is shown publicly. The live version should move through consent + interest review before any direct WhatsApp/phone contact is released." data-hi="किसी groom का phone number खुले में नहीं दिखेगा। Live version में consent + interest review के बाद ही direct WhatsApp/phone contact दिया जाएगा।">No groom phone number is shown publicly. The live version should move through consent + interest review before any direct WhatsApp/phone contact is released.</span></div>
+</div></section>
+
+<section id="register"><div class="wrap">
+<h2 data-en="Bride Registration" data-hi="लड़की का रजिस्ट्रेशन">Bride Registration</h2>
+<p class="sub" data-en="Easy form — English + Hindi guidance." data-hi="आसान फॉर्म — English + Hindi में समझने योग्य।">Easy form — English + Hindi guidance.</p>
+<form id="regForm">
+<label>Full Name / पूरा नाम</label><input required name="name" placeholder="Name / नाम">
+<label>Age / उम्र</label><input required type="number" min="18" name="age" placeholder="Age / उम्र">
+<label>City / शहर</label><input required name="city" placeholder="City, India / शहर">
+<label>Education / शिक्षा</label><input name="education" placeholder="Education / शिक्षा">
+<label>Profession / काम</label><input name="profession" placeholder="Job / Business">
+<label>Preferred UK Groom / पसंद का रिश्ता</label><textarea name="preference" placeholder="Age, city, profession etc. / उम्र, शहर, profession आदि"></textarea>
+<label>WhatsApp / Phone</label><input required name="phone" placeholder="+91 ...">
+<label class="check"><input required type="checkbox"> <span>I agree / मैं सहमत हूँ कि मेरी जानकारी matchmaking के लिए उपयोग की जा सकती है, और मैं अपनी consent वापस लेने के तरीके देख सकता/सकती हूँ।</span></label>
+<button class="btn" type="submit">Submit / जमा करें</button>
+</form></div></section>
+
+<section id="contact"><div class="wrap"><h2 data-en="Contact the Bureau" data-hi="ब्यूरो से संपर्क करें">Contact the Bureau</h2><p class="sub" data-en="Official business contact details can be added before launch." data-hi="Launch से पहले official business contact details यहां जोड़ें।">Official business contact details can be added before launch.</p>
+<div class="grid"><div class="card"><h3>WhatsApp</h3><p>Official business number</p><a class="btn" href="#">Chat / चैट</a></div><div class="card"><h3>Email</h3><p>official@yourdomain.com</p></div><div class="card"><h3>Service</h3><p>India ↔ UK Online Matchmaking</p></div></div></div></section>
+
+<footer><strong>UK India Marriage Bureau</strong><p class="small">Privacy Policy · Terms & Conditions · Verification Policy · Refund Policy</p><p class="small">© 2026 UK India Marriage Bureau</p></footer>
+
+<div id="modal" class="modal"><div class="modalbox"><button class="close" onclick="closeInterest()">×</button><h2 style="text-align:left">Interested / रुचि है</h2><p id="modalText">Profile selected.</p>
+<label>Your Name / आपका नाम</label><input id="iName" placeholder="Name / नाम">
+<label>Your WhatsApp / आपका WhatsApp</label><input id="iPhone" placeholder="+91 ...">
+<label class="check"><input id="iConsent" type="checkbox"> <span>I agree that the bureau may contact me about this profile / मैं सहमत हूँ कि ब्यूरो इस प्रोफाइल के बारे में मुझसे संपर्क कर सकता है।</span></label>
+<button class="btn" onclick="submitInterest()">Continue / आगे बढ़ें</button>
+<p class="small">Next step: the request goes to the bureau for review. Groom contact is not displayed on this page.</p>
+</div></div>
+<div id="toast"></div>
+
+<script>
+let currentProfile='';
+let lang='en';
+const langBtn=document.getElementById('langBtn');
+function applyLang(){
+ document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=lang==='en'?el.dataset.en:el.dataset.hi});
+ langBtn.textContent=lang==='en'?'हिंदी':'English';
+}
+langBtn.onclick=()=>{lang=lang==='en'?'hi':'en';applyLang()};
+function openInterest(p){currentProfile=p;document.getElementById('modalText').textContent=(lang==='en'?'You selected: ':'आपने चुना: ')+p+'. '+(lang==='en'?'Your contact will be sent to the bureau for review.':'आपका संपर्क ब्यूरो को review के लिए भेजा जाएगा।');document.getElementById('modal').style.display='flex'}
+function closeInterest(){document.getElementById('modal').style.display='none'}
+function submitInterest(){
+ if(!document.getElementById('iName').value||!document.getElementById('iPhone').value||!document.getElementById('iConsent').checked){showToast(lang==='en'?'Please complete the details and consent.':'कृपया जानकारी और consent पूरा करें।');return}
+ closeInterest();showToast(lang==='en'?'Interest submitted. The bureau can review and contact you.':'Interest भेज दिया गया। ब्यूरो review करके आपसे संपर्क कर सकता है।');
+}
+document.getElementById('regForm').onsubmit=e=>{e.preventDefault();showToast(lang==='en'?'Registration received (demo). Connect a secure backend before launch.':'Registration प्राप्त हुआ (demo)। Launch से पहले secure backend जोड़ें।');e.target.reset()};
+function showToast(t){let x=document.getElementById('toast');x.textContent=t;x.style.display='block';setTimeout(()=>x.style.display='none',3500)}
+</script>
+</body></html>
